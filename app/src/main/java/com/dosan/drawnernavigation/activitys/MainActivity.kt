@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.drawerlayout.widget.DrawerLayout.DrawerListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.dosan.drawnernavigation.Fragments.AlertFragment
@@ -28,7 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         setToolbar()
         showSelectFrame(EmailFragment())
-        //navigationView.setOnNavigationItemSelectedListener
+
+
+
         navigationView?.setNavigationItemSelectedListener {
 
             when (it.itemId) {
